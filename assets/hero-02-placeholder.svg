@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" fill="none">
+  <defs><radialGradient id="bg" cx="0" cy="0" r="1" gradientTransform="matrix(900 900 -780 780 720 90)" gradientUnits="userSpaceOnUse"><stop stop-color="#31584D"/><stop offset=".5" stop-color="#142B29"/><stop offset="1" stop-color="#090D13"/></radialGradient></defs>
+  <rect width="900" height="900" fill="url(#bg)"/>
+  <g opacity=".2" stroke="#B7FFE8"><path d="M0 150H900M0 300H900M0 450H900M0 600H900M0 750H900M150 0V900M300 0V900M450 0V900M600 0V900M750 0V900"/></g>
+  <path d="M170 670L450 170L730 670H170Z" stroke="#85EFD0" stroke-opacity=".35" stroke-width="3"/><path d="M260 620L450 280L640 620H260Z" stroke="#B7FFE8" stroke-opacity=".7" stroke-width="2"/><circle cx="450" cy="450" r="112" stroke="#85EFD0" stroke-width="2" stroke-dasharray="5 12"/>
+  <text x="450" y="755" fill="#EAFBF5" font-family="Arial,sans-serif" font-size="54" font-weight="700" letter-spacing="10" text-anchor="middle">HERO IMAGE 02</text><text x="450" y="810" fill="#9ABBB0" font-family="monospace" font-size="20" letter-spacing="4" text-anchor="middle">REPLACE WITH OPTION 02</text>
+</svg>

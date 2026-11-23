@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="[DESCRIPCIÓN BREVE DE LA PROPUESTA]">
+  <title>[NOMBRE DEL PROYECTO] · Presentación por GTL AI</title>
+  <link rel="preload" as="image" href="assets/hero-01-placeholder.svg" fetchpriority="high">
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+  <section class="welcome" id="bienvenida" aria-labelledby="welcome-title">
+    <div class="welcome-field" aria-hidden="true"></div>
+
+    <header class="welcome-top">
+      <img class="brand-mark" src="assets/gtl-ai-brand-mark.png" alt="GTL AI" width="48" height="48" fetchpriority="high" decoding="async">
+      <span class="private-tag"><i aria-hidden="true"></i> Presentación privada</span>
+    </header>
+
+    <div class="welcome-main">
+      <div class="welcome-copy">
+        <p class="welcome-kicker"><span aria-hidden="true"></span>[TIPO DE PROPUESTA]</p>
+        <h1 id="welcome-title"><span>[NOMBRE DEL</span><br><em>PROYECTO]</em></h1>
+        <p class="welcome-description">[DESCRIPCIÓN BREVE DE LA PROPUESTA. IDEALMENTE, UNA O DOS LÍNEAS.]</p>
+        <a class="start-demo" id="empezar-demo" href="demos/01/index.html">
+          Explorar propuesta <span aria-hidden="true">↗</span>
+        </a>
+        <noscript>
+          <p class="plain-links">JavaScript está desactivado. <a href="demos/01/index.html">Abrir opción 01</a>.</p>
+        </noscript>
+      </div>
+
+      <figure class="welcome-visual" aria-label="Vista previa visual del proyecto">
+        <div class="portal-shell">
+          <div class="portal-rails" aria-hidden="true"></div>
+          <div class="portal-mark" aria-hidden="true">
+            <video id="brand-film" muted playsinline preload="auto" poster="assets/gtl-ai-logo-poster.webp" disablepictureinpicture tabindex="-1">
+              <source src="assets/gtl-ai-logo-intro.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="portal-window" id="demo-aperture">
+            <div class="hero-slides" id="hero-slides" aria-hidden="true">
+              <img class="hero-slide is-active" data-hero-slide src="assets/hero-01-placeholder.svg" alt="" width="900" height="900" fetchpriority="high" decoding="async">
+              <img class="hero-slide" data-hero-slide src="assets/hero-02-placeholder.svg" alt="" width="900" height="900" fetchpriority="low" decoding="async">
+              <img class="hero-slide" data-hero-slide src="assets/hero-03-placeholder.svg" alt="" width="900" height="900" fetchpriority="low" decoding="async">
+            </div>
+            <span class="photo-shade" aria-hidden="true"></span>
+            <svg class="portal-drawing" viewBox="0 0 420 420" fill="none" aria-hidden="true">
+              <circle class="orbit-base" cx="210" cy="210" r="195"/>
+              <circle class="orbit-trace" cx="210" cy="210" r="195" pathLength="100"/>
+              <circle class="orbit-inner" cx="210" cy="210" r="177"/>
+              <path class="orbit-inner" d="M210 0v20m0 380v20M0 210h20m380 0h20"/>
+            </svg>
+          </div>
+          <div class="portal-index" aria-label="Vista previa de las tres opciones"><span class="is-active" data-hero-indicator>01</span><span data-hero-indicator>02</span><span data-hero-indicator>03</span></div>
+        </div>
+      </figure>
+    </div>
+
+    <footer class="welcome-footer">
+      <span>[NOMBRE DEL CLIENTE]</span>
+    </footer>
+  </section>
+
+  <div class="reveal-ring" aria-hidden="true"></div>
+
+  <main class="hub" aria-label="Opciones de la propuesta" hidden>
+    <header class="mast">
+      <nav class="switch" role="tablist" aria-label="Elegir opción">
+        <button type="button" role="tab" id="tab-01" data-demo="01" aria-controls="frame-01" aria-selected="true" aria-label="Opción 01">[TÍTULO OPCIÓN 01]</button>
+        <button type="button" role="tab" id="tab-02" data-demo="02" aria-controls="frame-02" aria-selected="false" aria-label="Opción 02" tabindex="-1">[TÍTULO OPCIÓN 02]</button>
+        <button type="button" role="tab" id="tab-03" data-demo="03" aria-controls="frame-03" aria-selected="false" aria-label="Opción 03" tabindex="-1">[TÍTULO OPCIÓN 03]</button>
+      </nav>
+    </header>
+    <div class="stage">
+      <button type="button" class="page-arrow page-arrow-prev" aria-label="Ir a la opción anterior"><span aria-hidden="true">‹</span></button>
+      <button type="button" class="page-arrow page-arrow-next" aria-label="Ir a la opción siguiente"><span aria-hidden="true">›</span></button>
+      <iframe class="is-on" id="frame-01" title="Opción 01" data-src="demos/01/index.html"></iframe>
+      <iframe id="frame-02" title="Opción 02" data-src="demos/02/index.html"></iframe>
+      <iframe id="frame-03" title="Opción 03" data-src="demos/03/index.html"></iframe>
+    </div>
+  </main>
+
+  <script src="welcome.js" defer></script>
+</body>
+</html>
