@@ -81,7 +81,7 @@ En las primeras líneas de `welcome.css` puedes cambiar los cuatro colores princ
 --quiet: #a7b7b3;  /* texto secundario */
 ```
 
-El video y el poster de GTL AI son independientes del cliente. El MP4 se conserva completo, sin recortes ni re-encode. La cámara CSS comienza en 1.22× y hace un push-in hasta 2.05× cuando el símbolo se reduce para dar paso al wordmark GTL AI; el movimiento se sincroniza con la reproducción y se pausa si el video se pausa. Si necesitas una portada sin el video, elimina el bloque `.portal-mark` del HTML y sus estilos asociados.
+El video y el poster de GTL AI son independientes del cliente. El MP4 se conserva completo, sin recortes ni re-encode. La reproducción espera a tener suficientes datos y retoma las interrupciones desde el mismo punto; si el navegador bloquea el autoplay, vuelve a intentarlo con la siguiente interacción. La cámara CSS comienza en 1.22× y hace un push-in hasta 2.05× cuando el símbolo se reduce para dar paso al wordmark GTL AI; su posición sigue el tiempo real del video, incluso durante pausas o buffering. Al ocultar la pestaña se pausa la reproducción, y al regresar continúa hasta el final. Si necesitas una portada sin el video, elimina el bloque `.portal-mark` del HTML y sus estilos asociados.
 
 ## Probar localmente
 

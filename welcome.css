@@ -52,9 +52,10 @@ body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sa
   background:
     repeating-linear-gradient(90deg, #9cffe309 0 1px, transparent 1px 68px),
     repeating-linear-gradient(0deg, #9cffe306 0 1px, transparent 1px 68px);
+  background-size: 68px 68px;
   opacity: .92;
-  will-change: background-position, transform;
-  animation: grid-drift 28s linear infinite;
+  will-change: background-position;
+  animation: grid-drift 128s linear infinite;
 }
 .welcome-field::after {
   background:
@@ -200,11 +201,11 @@ body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sa
   will-change: transform;
 }
 .portal-mark.is-static video { transform: scale(2.05); }
-/* The camera starts wide, then pushes in as the mark makes room for GTL AI. */
+/* Scrub the camera with the video's media time, including buffering and pauses. */
 .portal-mark.is-playing video {
-  animation: brand-camera 5.4167s cubic-bezier(.2, .72, .2, 1) both;
+  animation: brand-camera var(--brand-duration, 5.4167s) cubic-bezier(.2, .72, .2, 1) both paused;
+  animation-delay: var(--brand-offset, 0s);
 }
-.portal-mark.is-paused video { animation-play-state: paused; }
 .portal-window { position: relative; width: 100%; aspect-ratio: 1; isolation: isolate; }
 .hero-slides {
   position: absolute; inset: 5%;
@@ -382,12 +383,11 @@ body.revealing .reveal-ring {
 
 @keyframes grid-drift {
   0% {
-    background-position: 0 0, 0 0;
-    transform: translate3d(0, 0, 0);
+    background-position: 0 0;
   }
   100% {
-    background-position: -136px 22px, -20px 34px;
-    transform: translate3d(-10px, 6px, 0);
+    /* Whole tiles keep the loop seamless; vertical speed is 10% of horizontal. */
+    background-position: -680px 68px;
   }
 }
 @keyframes axis-flash {
